@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// URLを書いてあるところ
+Route::get('calcs/{num1}/{calc}/{num2}', 'calcsController@show', 'calcsController@aaa');
